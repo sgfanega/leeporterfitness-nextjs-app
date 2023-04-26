@@ -1,0 +1,12 @@
+$primary-color: #212529;
+$primary-secondary-color: #3A3E42;
+$accent-color: #F15A24;
+$font-color: #EEEEEE;
+
+@mixin link-preset-bright-gray {
+  text-decoration: none;
+  color: $font-color;
+  &:hover {
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,11 @@
+@use '../colors';
+
+.home__bottom-banner {
+  position: relative;
+  .home__bottom-banner-image {
+    object-fit: cover;
+    object-position: 10%;
+    filter: brightness(60%);
+    z-index: -1;
+  }
+}

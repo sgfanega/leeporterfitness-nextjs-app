@@ -1,0 +1,13 @@
+@use '../colors';
+
+.page-banner {
+  min-height: 40vh;
+  display: flex;
+  align-items: flex-end;
+  img {
+    height: 50vh !important;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(50%);
+  }
+}

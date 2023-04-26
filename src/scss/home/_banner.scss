@@ -1,0 +1,24 @@
+@use '../colors';
+
+.home__banner {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hero__banner-image {
+    object-fit: cover;
+    filter: brightness(20%);
+    z-index: -1;
+  }
+  .hero__banner-video {
+    border-radius: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home__banner {
+    .hero__banner-video {
+      height: 25rem;
+    }
+  }
+}

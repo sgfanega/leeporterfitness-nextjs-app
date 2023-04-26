@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "menuLinks": [
+        {
+          "id": 0,
+          "label": "Home",
+          "url": "/"
+        },
+        {
+          "id": 1,
+          "label": "The Process",
+          "url": "/the-process"
+        },
+        {
+          "id": 2,
+          "label": "Services",
+          "url": "/services"
+        },
+        {
+          "id": 5,
+          "label": "About Me",
+          "url": "/about-me"
+        },
+        {
+          "id": 4,
+          "label": "Contact Me",
+          "url": "/contact-me"
+        }
+      ],
+      "pageContent": { 
+        "home": {
+          "banner": {
+            "title": "Athlete. Coach. Personal Trainer",
+            "videoUrl": "something",
+            "bannerImageUrl": "/../public/images/bannerImage.jpg",
+            "buttonText": "What Are You Waiting For?",
+            "buttonUrl": "something"
+          },
+          "whyExercise": [
+            {
+              "id": 0,
+              "reason": "Helps with weight lost"
+            },
+            {
+              "id": 1,
+              "reason": "Helps with muscle gain"
+            },
+            {
+              "id": 2,
+              "reason": "Combats health conditions"
+            },
+            {
+              "id": 3,
+              "reason": "Combats health disease"
+            },
+            {
+              "id": 4,
+              "reason": "Improves everyday mood"
+            },
+            {
+              "id": 5,
+              "reason": "Boosts energy"
+            },
+            {
+              "id": 6,
+              "reason": "Increases your life span"
+            },
+            {
+              "id": 7,
+              "reason": "Helps prevent injuries"
+            }
+          ],
+          "introduction": {
+            "firstName": "Leigha",
+            "lastName": "Porter",
+            "description": "I’m an athlete, coach, and a personal trainer. I love what I do, and that is to help you achieve your fitness goals. With my expertise, and your determination, we can achieve anything. Join me and become the best possible <span class='fc-halloween-orange'>You</span>",
+            "imageUrl": "/../public/images/ERHL023.jpg"
+          },
+          "services": [
+            {
+              "id": 0,
+              "title": "Online Training Program",
+              "description": "A specialized training routine fit to your desired outcome. Each program will be developed uniquely for a client.",
+              "imageUrl": "/../public/images/servicesOnline.jpg"
+            },
+            {
+              "id": 1,
+              "title": "1-on-1 Training Program",
+              "description": "A more hands-on approach where I personally help you train through your program. Great for those who are new to working out or need guidance on how each exercise is performed.",
+              "imageUrl": "/../public/images/servicesOneOnOneImage.jpg"
+            }
+          ],
+          "bottomBanner": {
+            "imageUrl": "/../public/images/bannerBottom.jpg"
+          }
+        },
+        "theProcess": {
+          "title": "The Process",
+          "bannerImageUrl": "/../public/images/theProcess.jpg",
+          "content": ""
+        },
+        "services": [],
+        "aboutMe": [],
+        "contactMe": []
+      }
+    }
+  ]
+}

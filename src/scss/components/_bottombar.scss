@@ -1,0 +1,16 @@
+@use '../colors';
+
+.bottom-bar {
+  background-color: colors.$primary-secondary-color;
+  color: colors.$font-color;
+  padding: 0.5rem 0;
+
+  a {
+    @include colors.link-preset-bright-gray;
+  }
+
+  p {
+    font-size: small;
+    margin-bottom: 0;
+  }
+}

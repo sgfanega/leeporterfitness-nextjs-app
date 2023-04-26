@@ -1,0 +1,53 @@
+@use 'colors';
+
+body {
+  background-color: #EEEEEE;
+}
+
+.fc-dark-gunmetal {
+  color: colors.$primary-color;
+}
+
+.fc-bright-gray {
+  color: colors.$font-color;
+}
+
+.fc-halloween-orange {
+  color: colors.$accent-color;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.btn-outline-halloween-orange {
+  color: colors.$accent-color;
+  border: 1px solid colors.$accent-color;
+  &:hover {
+    color: colors.$font-color;
+    background-color: colors.$accent-color;
+  }
+}
+
+.btn-halloween-orange {
+  background-color: colors.$accent-color;
+  color: colors.$font-color;
+  &:hover {
+    background-color: #C1481D;
+    color: colors.$font-color;
+  }
+}
+
+.display-8 {
+  font-size: calc(1.725rem + 5.1vw);
+}
+
+@media only screen and (min-width: 2559px) {
+  .display-8 {
+    font-size: 8rem;
+  }
+}

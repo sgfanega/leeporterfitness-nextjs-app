@@ -1,0 +1,15 @@
+@use '../colors';
+
+.home__why-exercise {
+  background-color: colors.$primary-color;
+  hr {
+    margin: auto;
+    border-radius: 1rem;
+    border-top: 0.5rem solid #EEEEEE;
+    opacity: 1;
+    height: 2px;
+    width: 40%;
+    color: colors.$font-color;
+
+  }
+}

@@ -1,0 +1,6 @@
+@use '../colors';
+
+.the-process__main {
+  min-height: 80vh;
+  background-color: colors.$primary-secondary-color;
+}
