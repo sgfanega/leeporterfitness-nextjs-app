@@ -3,4 +3,16 @@
 .the-process__main {
   min-height: 80vh;
   background-color: colors.$primary-secondary-color;
+  .profile-picture-container {
+    width: 100%;
+    > div {
+      position: unset !important;
+    }
+    .profile-picture-image {
+      object-fit: contain;
+      width: 100% !important;
+      position: relative !important;
+      height: unset !important;
+    }
+  }
 }

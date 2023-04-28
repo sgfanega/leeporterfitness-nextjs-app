@@ -26,7 +26,7 @@ export default function WhyExercise({ whyExercise } : WhyExercise) {
           <Col xs={4} className="m-auto">
             <Carousel controls={false} indicators={false}>
               {whyExercise.map((reasons) => (
-                <Carousel.Item interval={3000}>
+                <Carousel.Item interval={3000} key={reasons.id}>
                     <p className="fs-3 fc-bright-gray mb-0 text-end">{reasons.reason}</p>
                 </Carousel.Item>
               ))}

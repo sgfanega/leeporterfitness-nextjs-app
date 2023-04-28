@@ -27,7 +27,7 @@ export default function Introduction({ introduction } : Introduction) {
       <Container>
         <Row >
           <Col lg={{ span: 6, offset: 6}}>
-            <p className="display-4 fc-bright-gray text-uppercase">Hi, I'm {introduction.firstName}</p>
+            <p className="display-4 fc-bright-gray text-uppercase">Hi, I&apos;m {introduction.firstName}</p>
             <p className="display-1 fc-halloween-orange text-uppercase fw-bold">{introduction.lastName}</p>
             <p className="fs-3 fc-bright-gray" dangerouslySetInnerHTML={{__html: introduction.description}}></p>
           </Col>
