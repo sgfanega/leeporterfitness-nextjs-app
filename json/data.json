@@ -97,13 +97,40 @@
         },
         "theProcess": {
           "title": "The Process",
-          "bannerImageUrl": "/../public/images/theProcess.jpg",
+          "bannerImageUrl": "/../public/images/theProcessBanner.jpg",
           "content": "Congratulations, you made the first step in your fitness journey, for that, I am proud of you. Your journey is just starting, and I know you have a lot of questions on what to eat, what exercises to do, when to do them, and how to do them. Lucky for you, I am licensed to teach you about how to morph the human body.<br/><br/>There are so many different modalities to fitness, such as:<br/><ul><li>High-Intensity Interval Training (HIIT)</li><li>Bodybuilding</li><li>CrossFit</li><li>Boxing</li><li>Powerlifting</li><li>Martial Arts</li><li>Yoga</li></ul>When you&apos;re first starting out, it can be extremely overwhemling and exhausting. How does someone figure out what workouts to do? How do you know it will work for you? How do you know you&apos;re not wasting your time and money on a gym or person who won&apos;t give you what you&apos;re looking for?<br/><br/>I specialize in helping people find out what their goals are, and how to achieve those goals. Not just the:<span class='fc-halloween-orange fw-500'>&quot;I want to lose weight&quot;</span>, <span clas='fc-halloween-orange fw-500'>&quot;I want to fit in my jeans like when I was 18&quot;</span> or <span class='fc-halloween-orange fw-500'>&quot;I want to get strong and not get bulky&quot;</span>.<br/><br/>But deeper and more detailed goals in every aspect of your life. What do you want to FEEL like? What do you want to LOOK like? What kind of atmosphere are you looking for? Do you want someone to teach you, or someone to guide you?<br/><br/> I want my clients to learn how to workout according to what they want and be able to do it on their own. I don&apos;t want to milk my clients out of their money and receive nothing for it. I want to set you up for success for the run.<br/><br/>So let&apos;s get this started. You tell me what you want, and I will show you how to get them.",
           "profilePictureUrl": "/../public/images/profilePicture.jpg",
           "name": "Lee Porter",
           "titleCertification": "ACSM-CPT"
         },
-        "services": [],
+        "services": {
+          "title": "Services",
+          "bannerImageUrl": "/../public/images/servicesBanner.jpg",
+          "content": "<p class='fs-1 fc-halloween-orange fw-500'>Welcome!</p><p>You've stumbled upon my services page. Currently, I offer two types of services: Online Training, and In-Person One-on-One Training.</p><h2 class='fs-2 fc-halloween-orange fw-500'>What is Online Training?</h2><p>Online Training consists of a workout schedule/plan that is suited to your body weight, experience with working out, and more importantly, your goals and what you want to achieve. These workout schedule and plans are not something created by an online algorithm, but instead created by me. I will take the time and effort to ensure that your workout plan is to your needs. Not only that, but if there are certain exercises that you cannot do, or are not able to do because the lack of equipment, I give an alternative that is as-good as my original plan. </p><p>I will be a resource for you as well. It is not a full service until you finish your workout schedule. If there are things you are worried about, things you need changed, it is included in this plan. Furthermore, I will be a resource for you, whether you need help figuring out what meals to eat, what supplements to buy, or even when to workout, I will be there.                </p><p>More information below on what the pricing of the online training will be.</p><h2 class='fs-2 fc-halloween-orange fw-500'>What is In-Person One-on-One Training?</h2><p>In-Person One-on-One Training is essentially the Online Training plan but with me physically there to help you out. This plan is a bit more complicated as the in-person training takes up a lot of time.</p><p>What is required for this plan is a dedicated time and location for us to workout. I prefer a public gym where I can vouch for the equipment to be safe and excellent. Gym membership at the gym agreed upon is not included in this plan. Please choose this plan if you are certain you can make the time and effort to meet me in a gym of our choosing.</p><p> More information below on what the pricing of the in-person one-on-one training will be.</p>",
+          "pricings" : [
+            {
+              "id": 0,
+              "title": "3 Month Training",
+              "type": "Online Training",
+              "monthly": "$150",
+              "full": "$435"
+            },
+            {
+              "id": 1,
+              "title": "6 Month Training",
+              "type": "Online Training",
+              "monthly": "$145",
+              "full": "$860"
+            },
+            {
+              "id": 2,
+              "title": "One-on-One Training",
+              "type": "In-Person Training",
+              "monthly": "Contact Me",
+              "full": "Contact Me"
+            }
+          ]
+        },
         "aboutMe": [],
         "contactMe": []
       }

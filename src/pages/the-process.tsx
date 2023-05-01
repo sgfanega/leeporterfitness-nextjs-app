@@ -14,7 +14,7 @@ export default function TheProcess() {
       <Container className="my-5">
         <Row className="justify-content-between">
           <Col className="d-flex flex-column" lg={8}>
-            <div className="bg-dark-gunmental shadow-lg p-3 mb-5 rounded px-4 py-3">
+            <div className="bg-dark-gunmental shadow-lg mb-5 rounded px-4 py-3">
               <p className="fs-1 fc-halloween-orange fw-500">You did it!</p>
               <div className="fs-5 fc-bright-gray" dangerouslySetInnerHTML={{__html:theProcessData.content}}>
               </div>

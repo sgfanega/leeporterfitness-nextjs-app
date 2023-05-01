@@ -1,7 +1,7 @@
-$primary-color: #212529;
-$primary-secondary-color: #3A3E42;
-$accent-color: #F15A24;
-$font-color: #EEEEEE;
+$primary-color: #212529; // Dark Gunmental
+$primary-secondary-color: #3A3E42; // Arsenic
+$accent-color: #F15A24; // Halloween Orange
+$font-color: #EEEEEE; // Bright Gray
 
 @mixin link-preset-bright-gray {
   text-decoration: none;

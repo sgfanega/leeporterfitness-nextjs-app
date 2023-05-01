@@ -17,7 +17,7 @@ interface ServicesConent {
 
 export default function Services( { services } : Services) {
   return (
-    <section className="home__services py-5">
+    <section className="home__services bg-bright-gray py-5">
       <Container>
         <h2 className="display-3 text-center fw-500 fc-dark-gunmetal pb-5">My Services</h2>
         <Row className="justify-content-center justify-content-xl-evenly">

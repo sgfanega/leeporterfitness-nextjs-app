@@ -1,11 +1,19 @@
 @use 'colors';
 
 body {
-  background-color: #EEEEEE;
+  background-color: colors.$primary-color;
 }
 
 .bg-dark-gunmental {
   background-color: colors.$primary-color;
+}
+
+.bg-arsenic {
+  background-color: colors.$primary-secondary-color;
+}
+
+.bg-bright-gray {
+  background-color: colors.$font-color;
 }
 
 .fc-dark-gunmetal {
@@ -43,6 +51,14 @@ body {
   &:hover {
     background-color: #C1481D;
     color: colors.$font-color;
+  }
+}
+
+.link-bright-gray {
+  color: colors.$font-color;
+  text-decoration: none;
+  &:hover {
+    color: colors.$accent-color;
   }
 }
 
