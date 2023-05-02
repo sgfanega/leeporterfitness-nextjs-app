@@ -11,3 +11,13 @@
     filter: brightness(50%);
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .page-banner {
+    min-height: 0vh;
+    padding-top: 4rem;
+    .page-banner-image {
+      min-height: 0vh;
+    }
+  }
+}

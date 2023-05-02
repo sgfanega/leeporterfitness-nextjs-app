@@ -1,4 +1,3 @@
-import Image from "next/image"
 import { Container, Col, Row } from 'react-bootstrap'
 import PageBanner from '../../components/page-banner'
 import data from '../../json/data.json'

@@ -131,7 +131,14 @@
             }
           ]
         },
-        "aboutMe": [],
+        "aboutMe": {
+          "title": "About Me",
+          "bannerImageUrl": "/../public/images/aboutMeBanner.jpg",
+          "content": "",
+          "picture": "/../public/images/aboutMePicture.jpg",
+          "name": "Lee Porter",
+          "certification": "ACSM-CPT"
+        },
         "contactMe": []
       }
     }

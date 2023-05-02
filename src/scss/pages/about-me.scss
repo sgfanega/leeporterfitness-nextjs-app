@@ -1,0 +1,18 @@
+@use '../colors';
+
+.about-me__main {
+  .about-me__container {
+    .profile-picture-container {
+      width: 100%;
+      > div {
+        position: unset !important;
+      }
+      .profile-picture-image {
+        object-fit: contain;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+      }
+    }
+  }
+}
