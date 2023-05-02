@@ -24,6 +24,7 @@ export default function AboutMe() {
                   fill={true}
                   sizes="(max-width: 1920px) 100vw"
                   quality={50}
+                  priority
                 />
               </div>
               <p className="fs-4 text-center fc-bright-gray mb-0">
