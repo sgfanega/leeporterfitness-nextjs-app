@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <Image src={Logo} alt="Lee Porter Fitness Logo"/>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
