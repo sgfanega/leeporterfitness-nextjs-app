@@ -2,6 +2,7 @@ import Image from "next/image"
 import { Container, Col, Row } from 'react-bootstrap'
 import PageBanner from '../../components/page-banner'
 import data from '../../json/data.json'
+import picture from '../../public/images/aboutMePicture.jpg'
 
 export default function AboutMe() {
   const aboutMeData = data?.data[0].pageContent.aboutMe
@@ -17,7 +18,7 @@ export default function AboutMe() {
               <Image
                 className="about-me__profile-picture shadow"
                 style={{objectFit: 'contain'}}
-                src={aboutMeData.picture} 
+                src={picture} 
                 alt="Profile Picture"
                 fill
                 sizes="100vw"
