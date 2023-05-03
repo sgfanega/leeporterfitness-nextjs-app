@@ -1,8 +1,13 @@
+const { config } = require('process')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  test: /\.node$/,
-  use: "node-loader"
 }
 
 module.exports = nextConfig
+
+config.module.rules.push({
+  test: /\.node$/,
+  use: "node-loader"
+})
