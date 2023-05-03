@@ -29,7 +29,7 @@ export default function Banner({ banner } : Banner) {
         <Row className="text-center text-lg-start">
           <Col xs={{ order: 2}} lg={{ span: 5, order: 1}}>
             <h2 className="display-8 fw-bold fc-bright-gray">
-              What's Stopping <span className="fc-halloween-orange">You?</span>
+              What&apos;s Stopping <span className="fc-halloween-orange">You?</span>
             </h2>
             <p className="fs-4 fc-bright-gray">{banner?.title}</p>
             <Link className="btn btn-lg btn-outline-halloween-orange" 

@@ -2,55 +2,46 @@ import Image from "next/image"
 import { Container, Col, Row } from 'react-bootstrap'
 import PageBanner from '../../components/page-banner'
 import data from '../../json/data.json'
-import Link from "next/link"
 
 export default function AboutMe() {
   const aboutMeData = data?.data[0].pageContent.aboutMe
 
   return (
     <>
-    <PageBanner title={aboutMeData.title} bannerImageUrl={aboutMeData.bannerImageUrl}/> 
-    <section className="about-me__main bg-arsenic py-5">
-      <Container className="about-me__container">
-        <Row>
-          <Col xs={12} md={5}>
-            <div className="rounded-3 shadow bg-dark-gunmental px-4 py-3 mb-2">
-              <h2 className="text-center fc-halloween-orange fw-400">Meet Your Trainer</h2>
-              <div className="profile-picture-container py-2">
-                <Image 
-                  className="profile-picture-image rounded-3" 
-                  src={aboutMeData.picture} 
-                  alt="Profile Picture"
-                  fill={true}
-                  sizes="(max-width: 1920px) 100vw"
-                  quality={50}
-                  priority
-                />
-              </div>
-              <p className="fs-4 text-center fc-bright-gray mb-0">
-                {aboutMeData.name} - <span className="text-decoration-underline fc-halloween-orange">{aboutMeData.certification}</span>
-              </p>
+    <PageBanner title={aboutMeData.title} bannerImageUrl={aboutMeData.bannerImageUrl}/>
+    <section className="about-me__main d-flex align-items-center bg-arsenic py-5">
+      <Container>
+        <Row className="justify-content-center justify-content-lg-between align-items-center ">
+          <Col xs={12} md={6} lg={4} xl={3} className="pb-5 pb-lg-0">
+            <div className="about-me__profile-picture-container">
+              <Image
+                className="about-me__profile-picture shadow"
+                style={{objectFit: 'contain'}}
+                src={aboutMeData.picture} 
+                alt="Profile Picture"
+                fill
+                sizes="100vw"
+                quality={50}
+                priority
+              />
             </div>
+            <p className="fs-3 fc-bright-gray text-center fw-500">Lee Porter - <span className="fc-halloween-orange">ACSM-CPT</span></p>
           </Col>
-          <Col xs={12} md={7}>
-            <div className="rounded-3 shadow bg-dark-gunmental px-4 py-3 mb-2 mb-md-3 mb-lg-5">
-              <p className="fs-5 fc-bright-gray fw-500">Hi, I'm Lee Porter. I am the founder and sole trainer of Lee Porter Fitness.</p>
-              <p className="fs-6 fc-bright-gray">Fitness has been a passion of mine since I was in High School. I went to college to obtain a 
-                degree in Physical Therapy, but changed to Exercise Science because I wanted to learn all aspects of fitness: Physical Appearance,
-                Mental Health, Physical Health, and Injury Rehab/Prevention.
-              </p>
-            </div>
-            <div className="rounded-3 shadow bg-dark-gunmental px-4 py-3 mb-2 mb-md-3 mb-lg-5">
-              <p className="fs-5 fc-bright-gray fw-500">Additional Trivia:</p>
-              <p className="fs-6 fc-bright-gray">I lived in India and Thailand from ages 10-18, and loved everything about it. I am married to a 
-                beautiful man, and own two mischievous cats. I love crafting mehndi tattoos, and obsessed with boba.
-              </p>
-            </div>
-            <div className="rounded-3 shadow bg-dark-gunmental px-4 py-3 mb-2 mb-md-3 mb-lg-5">
-              <p className="fs-5 fc-bright-gray fw-500">Mission Statement:</p>
-              <p className="fs-6 fc-bright-gray">To teach people how to workout according to their goals, and be able to do it on their own. To
-              give the tools for success long term while learning to love the process and make progress!
-              </p>
+          <Col xs={12} md={8} lg={8}>
+            <div className="about-me__content bg-dark-gunmetal fc-bright-gray rounded-5 shadow px-4 pt-4 pb-2">
+              <p className="fs-6">Hi, I’m Lee Porter, a <span className="fc-halloween-orange">Certified Personal
+                Trainer</span>. I am the founder and creator of Lee Porter Fitness, a personal training company
+                that is excited to help you achieve your fitness goals.</p>
+              <p className="fs-6">Fitness has always been a passion of mine since I was doing sports in High School. 
+                I went to college to obtain a degree in Physical Therapy, but instead changed to Exercise Science
+                for my love to help others in becoming the best version of themselves. I wanted to learn all aspects
+                of fitness: Physical Appearance, Mental Health, Physical Health, and Injury Rehab/Prevention.</p>
+              <p className="fs-6">I have lived in India, Thailand, the United States, and now I’m back in Thailand.
+                I am married to a beautiful man, and own two mischievous cats. I love crafting mehndi tattoos, and
+                am obsessed with boba.</p>
+              <p className="fs-6">My main goal as a professional physical trainer is to teach people how to workout 
+                properly according to their goals, and give them the tools for success in the long term while
+                learning to love the process and make progress!</p>
             </div>
           </Col>
         </Row>
