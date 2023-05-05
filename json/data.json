@@ -135,7 +135,7 @@
           "title": "About Me",
           "bannerImageUrl": "/../public/images/aboutMeBanner.jpg",
           "content": "",
-          "picture": "/../public/images/aboutMePicture.jpg",
+          "picture": "/images/aboutMePicture.jpg",
           "name": "Lee Porter",
           "certification": "ACSM-CPT",
           "introduction": "Fitness has been a passion of mine since I was in High School. I went to college to obtain a degree in Physical Therapy, but changed to Exercise Science because I wanted to learn all aspects of fitness: Physical Appearance, Mental Health, Physical Health, and Injury Rehab/Prevention.",
