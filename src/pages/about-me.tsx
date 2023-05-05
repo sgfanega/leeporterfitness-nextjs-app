@@ -4,12 +4,26 @@ import PageBanner from '../../components/page-banner'
 import data from '../../json/data.json'
 import picture from '../../public/images/aboutMePicture.jpg'
 
-export default function AboutMe() {
+interface AboutMe {
+  aboutMeContent: {
+    title:             string,
+    bannerImageUrl:    string,
+    content:           string,
+    picture:            string,
+    name:              string,
+    certification:     string,
+    introduction:      string,
+    trivia:            string,
+    missionStatement:  string
+  }
+}
+
+export default function AboutMe({ aboutMeContent } : AboutMe ) {
   const aboutMeData = data?.data[0].pageContent.aboutMe
 
   return (
     <>
-    <PageBanner title={aboutMeData.title} bannerImageUrl={aboutMeData.bannerImageUrl}/>
+    <PageBanner title={aboutMeContent.title} bannerImageUrl={aboutMeContent.bannerImageUrl}/>
     <section className="about-me__main d-flex align-items-center bg-arsenic py-5">
       <Container>
         <Row className="justify-content-center justify-content-lg-between align-items-center ">
@@ -18,7 +32,7 @@ export default function AboutMe() {
               <Image
                 className="about-me__profile-picture shadow"
                 style={{objectFit: 'contain'}}
-                src={picture} 
+                src={aboutMeContent.picture} 
                 alt="Profile Picture"
                 fill
                 sizes="100vw"
@@ -50,4 +64,12 @@ export default function AboutMe() {
     </section>
     </>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      aboutMeContent : data.data[0].pageContent.aboutMe
+    }
+  }
 }
