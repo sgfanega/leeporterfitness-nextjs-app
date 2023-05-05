@@ -133,7 +133,7 @@
         },
         "aboutMe": {
           "title": "About Me",
-          "bannerImageUrl": "/../public/images/aboutMeBanner.jpg",
+          "bannerImageUrl": "/images/aboutMeBanner.jpg",
           "content": "",
           "picture": "/images/aboutMePicture.jpg",
           "name": "Lee Porter",
