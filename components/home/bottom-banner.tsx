@@ -1,6 +1,6 @@
-import Container from "react-bootstrap/Container"
 import Link from "next/link"
 import Image from "next/image"
+import Container from "react-bootstrap/Container"
 
 interface BottomBanner {
   bottomBanner: BottomBannerContent
@@ -11,11 +11,13 @@ interface BottomBannerContent {
 }
 
 export default function BottomBanner({ bottomBanner } : BottomBanner) {
+  const imagePath = '/images/'
+
   return (
     <section className="home__bottom-banner">
       <Image 
         className="home__bottom-banner-image"
-        src={bottomBanner?.imageUrl}
+        src={imagePath + bottomBanner.imageUrl}
         alt="Bottom Banner Image"
         fill
       />

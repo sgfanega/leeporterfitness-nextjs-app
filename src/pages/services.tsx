@@ -1,21 +1,39 @@
+import Link from "next/link"
 import { Container, Col, Row } from 'react-bootstrap'
 import PageBanner from '../../components/page-banner'
 import data from '../../json/data.json'
-import Link from "next/link"
+import DOMPurify from 'isomorphic-dompurify'
 
+interface Services {
+  servicesContent: {
+    title:          string,
+    bannerImageUrl: string,
+    content:        string,
+    pricings:    PricingData[]
+  }
+}
 
-export default function Services() {
-  const servicesData = data?.data[0].pageContent.services
-  const pricingData = servicesData.pricings
+interface PricingData {
+  id:       number,
+  title:    string,
+  type:     string,
+  monthly:  string,
+  full:     string
+}
+
+export default function Services({ servicesContent } : Services) {
+  const sanitizedContent = DOMPurify.sanitize(servicesContent.content)
+  const pricingData = servicesContent.pricings
+  const imagePath = '/images/'
 
   return (
     <>
-      <PageBanner title={servicesData.title} bannerImageUrl={servicesData.bannerImageUrl}/>
+      <PageBanner title={servicesContent.title} bannerImageUrl={imagePath + servicesContent.bannerImageUrl}/>
       <section className="services__main bg-arsenic">
         <Container className="services__main__container pt-5">
           <Row className="justify-content-center justify-content-md-evenly justify-content-lg-between">
             <Col xs={10} md={12}>
-              <div className="fs-6 fc-bright-gray bg-dark-gunmetal shadow-lg mb-5 rounded-5 px-4 py-3" dangerouslySetInnerHTML={{__html:servicesData.content}}></div>
+              <div className="fs-6 fc-bright-gray bg-dark-gunmetal shadow-lg mb-5 rounded-5 px-4 py-3" dangerouslySetInnerHTML={{__html: sanitizedContent}}></div>
             </Col>
             {pricingData.map(pricingInfo => (
               <Col xs={10} md={5} lg={4} xl={3} key={pricingInfo.id}>
@@ -32,4 +50,12 @@ export default function Services() {
       </section>
     </>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      servicesContent : data.data[0].pageContent.services,
+    }
+  }
 }

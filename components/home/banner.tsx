@@ -17,11 +17,13 @@ interface BannerContent {
 }
 
 export default function Banner({ banner } : Banner) {
+  const imagePath = '/images/'
+
   return (
     <section className="home__banner">
       <Image 
         className="hero__banner-image" 
-        src={banner?.bannerImageUrl} 
+        src={imagePath + banner.bannerImageUrl} 
         alt="Banner Image" 
         fill
       />

@@ -13,6 +13,7 @@ interface WhyExerciseContent {
 }
 
 export default function WhyExercise({ whyExercise } : WhyExercise) {
+  const imagePath = '/images/'
   
   return (
     <section className="home__why-exercise">
