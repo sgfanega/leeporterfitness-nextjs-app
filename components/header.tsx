@@ -20,6 +20,7 @@ export default function Header() {
             {menuLinks.map(menuLink => (
              <Nav.Link key={menuLink.id} href={menuLink.url}>{menuLink.label}</Nav.Link> 
             ))}
+            <Nav.Link href="https://www.instagram.com/leeporterfitness/" target="_blank"><i className="bi bi-instagram fc-halloween-orange"></i></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

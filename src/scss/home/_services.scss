@@ -13,4 +13,12 @@
       height: unset !important;
     }
   }
+  .test {
+    position: relative;
+    aspect-ratio : 1 / 1;
+    width: 100%;
+    .image {
+      object-fit: contain;
+    }
+  }
 }

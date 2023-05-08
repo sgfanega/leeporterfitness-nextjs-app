@@ -59,6 +59,12 @@ export default function Footer({ menuLinks } : MenuLinks) {
                   leeporterfitness
                 </p>
               </a>
+              <a href="tel:+66805453121" target='_blank'>
+                <p className="fc-bright-gray">
+                  <i className="bi bi-telephone-fill fc-halloween-orange pe-3"></i>
+                  (080) 545-3121
+                </p>
+              </a>
             </li>
           </ul>
         </Col>
