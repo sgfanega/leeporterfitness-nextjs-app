@@ -1,7 +1,4 @@
-import Row  from "react-bootstrap/Row"
-import Col  from "react-bootstrap/Col"
-import Container from "react-bootstrap/Container"
-import Carousel from "react-bootstrap/Carousel"
+import { Container, Row, Col, Carousel } from "react-bootstrap"
 
 interface WhyExercise {
   whyExercise: WhyExerciseContent[]
@@ -21,10 +18,10 @@ export default function WhyExercise({ whyExercise } : WhyExercise) {
             <h2 className="display-3 fc-halloween-orange fw-500">Why Exercise?</h2>
             <hr/>
           </Col>
-          <Col xs={6} lg={5} xl={4} className="d-flex justify-content-center align-items-center text-center text-md-end">
+          <Col xs={6} lg={5} xl={4} className="d-flex justify-content-center align-items-center text-center">
             <Carousel controls={false} indicators={false}>
               {whyExercise.map((reasons) => (
-                <Carousel.Item interval={3000} key={reasons.id}>
+                <Carousel.Item interval={2000} key={reasons.id}>
                     <p className="fs-3 fc-bright-gray mb-0">{reasons.reason}</p>
                 </Carousel.Item>
               ))}

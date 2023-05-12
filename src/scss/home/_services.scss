@@ -2,18 +2,6 @@
 
 .home__services {
   .image-container {
-    width: 100%;
-    > div {
-      position: unset !important;
-    }
-    .image {
-      object-fit: contain;
-      width: 100% !important;
-      position: relative !important;
-      height: unset !important;
-    }
-  }
-  .test {
     position: relative;
     aspect-ratio : 1 / 1;
     width: 100%;
