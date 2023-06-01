@@ -1,17 +1,24 @@
 export default {
   defaultTitle: 'Lee Porter Fitness',
+  description: 'A Personal Trainer Fitness Website for Lee Porter',
   additionalLinkTags: [
     {
       rel: 'icon',
-      href: ''
+      href: '/favicon.ico'
+    },
+    {
+      rel: 'apple-touch-icon',
+      href: '',
+      sizes: '76x76'
     }
   ],
   openGraph: {
-    type: 'websites',
+    url: 'https://leeporterfitness.netlify.app',
+    type: 'website',
+    title: 'Lee Porter Fitness',
+    description: 'A Personal Trainer Fitness Website for Lee Porter',
     locale: 'en_IE',
-    url: 'https://leeporter.fitness',
     siteName: 'Lee Porter Fitness',
-    description: '',
     images: [
       {
         url: '',

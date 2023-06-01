@@ -5,15 +5,11 @@
   background-color: colors.$primary-secondary-color;
   .profile-picture-container {
     position: relative;
+    aspect-ratio : 1 / 1;
     width: 100%;
-    > div {
-      position: unset !important;
-    }
     .profile-picture-image {
       object-fit: contain;
-      width: 100% !important;
-      position: relative !important;
-      height: unset !important;
+      border: 1rem solid colors.$primary-color;
     }
   }
 }

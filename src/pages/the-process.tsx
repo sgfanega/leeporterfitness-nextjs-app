@@ -35,11 +35,11 @@ export default function TheProcess({ theProcessContent } : TheProcess) {
             </div>
           </Col>
           <Col lg={4}>
-            <div className="rounded-5 shadow bg-dark-gunmetal px-4 py-3">
+            <div className="px-4 py-3">
               <h2 className="text-center fc-halloween-orange">Meet Your Trainer</h2>
               <div className="profile-picture-container py-2">
                 <Image 
-                  className="profile-picture-image rounded-5" 
+                  className="profile-picture-image rounded-circle" 
                   src={imagePath + theProcessContent.profilePictureUrl} 
                   alt="Profile Picture"
                   quality={50}
@@ -48,7 +48,7 @@ export default function TheProcess({ theProcessContent } : TheProcess) {
                 />
               </div>
               <p className="fs-4 text-center fc-bright-gray mb-0">
-                {theProcessContent.name} - <span className="text-decoration-underline fc-halloween-orange">{theProcessContent.titleCertification}</span>
+                {theProcessContent.name} - <span className=" fc-halloween-orange">{theProcessContent.titleCertification}</span>
               </p>
             </div>
           </Col>

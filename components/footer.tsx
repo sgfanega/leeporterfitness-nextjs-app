@@ -17,7 +17,7 @@ interface MenuLinks {
 
 export default function Footer({ menuLinks } : MenuLinks) {
   return (
-  <footer id="#footer">
+  <footer id="footer">
     <Container>
       <Row className="pt-5 justify-content-between">
         <Col xs={12} md={5} className="d-flex justify-content-center justify-content-md-start pb-5 pb-md-0">

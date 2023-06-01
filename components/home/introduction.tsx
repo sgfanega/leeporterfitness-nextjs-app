@@ -5,10 +5,10 @@ import Col from 'react-bootstrap/Col'
 import DOMPurify from 'isomorphic-dompurify'
 
 interface Introduction {
-  introduction: IntroductionData
+  introduction: IntroductionContent
 }
 
-interface IntroductionData {
+interface IntroductionContent {
   firstName:    string,
   lastName:     string,
   description:  string,
