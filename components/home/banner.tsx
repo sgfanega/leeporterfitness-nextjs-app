@@ -47,7 +47,7 @@ export default function Banner({ banner } : Banner) {
               className="hero__banner-video"
               width="100%" 
               height="100%"
-              src="https://www.youtube.com/embed/0Df8BviqDz4" 
+              src={banner?.videoUrl} 
               title="YouTube video player" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
               allowFullScreen>

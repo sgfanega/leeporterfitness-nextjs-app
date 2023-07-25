@@ -32,10 +32,10 @@
         "home": {
           "banner": {
             "title": "Athlete. Coach. Personal Trainer",
-            "videoUrl": "something",
+            "videoUrl": "https://www.youtube.com/embed/0Df8BviqDz4",
             "bannerImageUrl": "bannerImage.jpg",
             "buttonText": "What Are You Waiting For?",
-            "buttonUrl": "something"
+            "buttonUrl": "/the-process"
           },
           "whyExercise": [
             {
