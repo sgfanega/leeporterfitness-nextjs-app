@@ -2,12 +2,13 @@
 
 .home__why-exercise {
   background-color: colors.$primary-color;
-  hr {
-    margin: auto;
+  h2::after {
+    content: '';
+    background: #EEEEEE;
+    height: 0.3rem;
     border-radius: 1rem;
-    border-top: 0.3rem solid #EEEEEE;
-    opacity: 1;
+    display: block;
     width: 40%;
-    color: colors.$font-color;
+    margin: auto;
   }
 }

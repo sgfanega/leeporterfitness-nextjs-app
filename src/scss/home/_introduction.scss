@@ -2,10 +2,9 @@
 
 .home__introduction {
   position: relative;
-  min-height: 90vh;
-  .introduction__banner-image {
+  .introduction__image {
+    border-radius: 1rem;
     object-fit: cover;
-    object-position: 10%;
     filter: brightness(60%);
     z-index: -1;
   }

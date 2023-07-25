@@ -12,11 +12,10 @@ interface WhyExerciseContent {
 export default function WhyExercise({ whyExercise } : WhyExercise) {
   return (
     <section className="home__why-exercise">
-      <Container className="py-5">
-        <Row className="justify-content-evenly">
+      <Container className="py-4">
+        <Row className="justify-content-between">
           <Col className="text-center text-md-start" xs={6} lg={5} xl={4}>
             <h2 className="display-3 fc-halloween-orange fw-500">Why Exercise?</h2>
-            <hr/>
           </Col>
           <Col xs={6} lg={5} xl={4} className="d-flex justify-content-center align-items-center text-center">
             <Carousel controls={false} indicators={false}>
