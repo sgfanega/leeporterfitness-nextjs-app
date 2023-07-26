@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   defaultTitle: 'Lee Porter Fitness',
   description: 'A Personal Trainer Fitness Website for Lee Porter',
@@ -8,12 +9,12 @@ export default {
     },
     {
       rel: 'apple-touch-icon',
-      href: '',
+      href: '/favicon.ico',
       sizes: '76x76'
     }
   ],
   openGraph: {
-    url: 'https://leeporterfitness.netlify.app',
+    url: 'https://leeporter.fitness',
     type: 'website',
     title: 'Lee Porter Fitness',
     description: 'A Personal Trainer Fitness Website for Lee Porter',
@@ -21,10 +22,11 @@ export default {
     siteName: 'Lee Porter Fitness',
     images: [
       {
-        url: '',
+        url: '/images/lee-porter-fitness-OG-image.jpg',
         width: 800,
         height: 600,
-        alt: ''
+        alt: 'Lee Porter Fitness Open Graph Image',
+        type: 'image/jpg'
       },
     ]
   }
