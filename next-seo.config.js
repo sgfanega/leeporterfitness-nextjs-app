@@ -22,7 +22,7 @@ export default {
     siteName: 'Lee Porter Fitness',
     images: [
       {
-        url: '/images/lee-porter-fitness-OG-image.jpg',
+        url: 'https://leeporter.fitness/lee-porter-fitness-OG-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Lee Porter Fitness Open Graph Image',
