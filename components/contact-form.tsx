@@ -51,7 +51,7 @@ export default function ContactForm() {
       <p className="fs-4 fw-500 fc-bright-gray text-center mb-0">We will get in touch with you soon!</p>
     }
     { showErrorMessage && 
-      <p className="fs-4 fw-500 fc-bright-gray text-center mb-0">There was an issue with your submission, please email <a href="mailto:info@futureconnect.one" >us.</a></p>
+      <p className="fs-4 fw-500 fc-bright-gray text-center mb-0">There was an issue with your submission, please email <a href="mailto:leeporterfitness@gmail.com" >us.</a></p>
     }
     { (!submitted) &&
       <Form name="contact-form" method="POST" data-netlify="true" onSubmit={onSubmit}>
